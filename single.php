@@ -15,3 +15,19 @@ $lista = ', ';
 ?></div>
 <?php
   } ?>
+
+---
+
+<?php $category = get_the_category();  ?>
+<div><?php
+$limitadorCats = get_the_category();
+$contador=0; $lista='';
+if ($limitadorCats) {
+	foreach($limitadorCats as $category) {
+		$contador++;
+		echo  $lista . '<a title="' . $category->name . '" href="'.  get_category_link(get_cat_id($category->cat_name)) .'"> ' . $category->name . '</a>' ;
+$lista = ', ';
+		if( $contador > 4 ) break; //exibe apenas em 5 categorias
+	}
+}
+?> ><div>
