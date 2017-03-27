@@ -19,5 +19,7 @@ Técnica de indexação Categoria e Tag
 Basicamente necessita:
 
 >>> Não deixar de inserir o atributo “Title”
+
 >>> Não deixar de inserir o atributo “Rel”
+
 >>> Não ultrapassar o média de 3 e no máx. 5 por publicação
